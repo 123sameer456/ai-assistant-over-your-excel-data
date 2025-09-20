@@ -2,7 +2,7 @@ from openai import OpenAI
 import openai
 
 
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key="api key here")
 
 
 
@@ -23,41 +23,8 @@ Important Rules:
 - Only return aggregation, filtering, or summary results. Never return the full raw data.
 
 Available columns and their datatypes:
-- SaleInvoiceId: int64
-- InvoiceNumber: int64
-- InvoiceDiscount: float64
-- NetAmount: int64
-- InvoiceDate: datetime64[ns]   <-- very important column
-- CompanyBranchId: int64
-- Branch: object
-- BranchType: object
-- TopLevelCategory: object
-- ProductCategory: object
-- ProductBrand: float64
-- SaleInvoiceItemId: int64
-- ProductItemId: int64
-- Barcode: object
-- ProductName: object
-- ProductDate: object
-- ProductUnit: object
-- Quantity: float64
-- GrossAmount: float64
-- ItemDiscount: float64
-- GST: float64
-- ItemNetAmount: float64
-- CostPrice: float64
-- ST_WalkIn: int64
-- ST_WalkInAmt: float64
-- ST_HomeDelivery: int64
-- ST_HomeDeliveryAmt: float64
-- ST_DineIn: int64
-- ST_DineInAmt: int64
-- ST_TakeAway: int64
-- ST_TakeAwayAmt: float64
-- ST_DineOut: int64
-- ST_DineOutAmt: int64
-- ST_FoodPanda: int64
-- ST_FoodPandaAmt: int64
+
+[columns meta deta here]
 
 Examples of valid queries to handle:
 - "What was the total sales in January 2024?" → groupby month on InvoiceDate, sum NetAmount
